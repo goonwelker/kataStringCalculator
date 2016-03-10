@@ -27,5 +27,10 @@ public class StringCalculatorTest {
 		int resultAdditionNumbers = StringCalculator.Add("1,2");
 		assertEquals(3, resultAdditionNumbers);
 	}
+	@Test
+	public void Add_AmountOfNumbersAsParam_ReturnAdditionNumbers() {
+		int resultAdditionNumbers = StringCalculator.Add("1,2,3");
+		assertEquals(6, resultAdditionNumbers);
+	}
 
 }
